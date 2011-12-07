@@ -1,0 +1,63 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui" xmlns:widget="urn:import:org.genejones.wordcount.client.widget">
+	<ui:style>
+		.button {
+			padding: 4px 8px;
+			font-size: 13px;
+			border: 1px solid #35AB57;
+			margin-top: 20px;
+			cursor: pointer;
+		}
+		
+		.button:hover {
+			padding: 4px 8px;
+			font-size: 13px;
+			border: 1px solid #35AB57;
+			background-color: #C0CF3A;
+		}
+		
+		.button:active {
+			padding: 5px 7px 3px 9px;
+		}
+		
+		.textBox {
+			width: 400px;
+			font-size: 14px;
+		}
+		
+		.textArea {
+			width: 400px;
+			height: 200px;
+		}
+		
+		.select {
+			
+		}
+		
+		.label {
+			margin-top: 20px;
+		}
+		.error{
+			color: red;
+			font-weight: bold;
+		}
+	</ui:style>
+	<widget:VerticalFlowPanel>
+		<g:Label ui:field="errorMsg" text="" styleName="{style.error}" />
+
+		<g:Label text="Book Title:" />
+		<g:TextBox ui:field="bookTitle" styleName="{style.textBox}" />
+		
+		<!--  Not yet implemented 
+		<g:Label text="Generate Method:" styleName="{style.label}" />
+		<g:ListBox ui:field="generateMethod" styleName="{style.select}" />
+ 		-->
+ 		
+		<g:Label text="Book Text:" styleName="{style.label}" />
+		<g:TextArea ui:field="bookText" styleName="{style.textArea}" />
+
+		<g:Button styleName="{style.button}" ui:field="button"
+			text="Submit Words For Analysis" />
+	</widget:VerticalFlowPanel>
+</ui:UiBinder> 

@@ -1,0 +1,18 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+	<ui:style>
+		.top {
+			background-color: #0084B0;
+			padding: 10px 30px 10px 30px;
+			color: white;
+		}
+		.top *{
+			color: white;
+		}
+	</ui:style>
+	<g:HTMLPanel ui:field="topBar" styleName="{style.top}">
+		<h1>Welcome to Apptegic Word Count</h1>
+		<em>by Gene Conroy-Jones</em>
+	</g:HTMLPanel>
+</ui:UiBinder> 
